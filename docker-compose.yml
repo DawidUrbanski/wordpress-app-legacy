@@ -9,8 +9,8 @@ services:
             - mailhog
         ports:
             - 80:80
-        domainname: [[placeholder]].localhost
-        hostname: [[placeholder]]
+        domainname: {placeholder}.localhost
+        hostname: {placeholder}
         volumes:
             - ./public:/var/www/html
             - ./wp.sh:/var/www/html/wp.sh

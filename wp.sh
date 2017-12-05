@@ -4,7 +4,7 @@
 if ! $(wp core is-installed); then
 
 	# install wordpress
-	wp core install --url='.localhost' --title='' --admin_user=admin --admin_password=admin --admin_email='admin@.localhost' --skip-email
+	wp core install --url='{placeholder}.localhost' --title='{placeholder}' --admin_user=admin --admin_password=admin --admin_email='admin@{placeholder}.localhost' --skip-email
 
 	# clean up
 	wp rewrite structure '/%postname%/' --hard
