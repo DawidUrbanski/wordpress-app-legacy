@@ -12,6 +12,8 @@ services:
         volumes:
             - ./public:/var/www/html
             - ./wp.sh:/var/www/html/wp.sh
+            - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+            - ./{placeholder}:/var/www/html/wp-content/themes/{placeholder}
         environment:
             WORDPRESS_DB_PASSWORD: docker
         depends_on:
